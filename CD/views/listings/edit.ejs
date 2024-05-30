@@ -1,0 +1,106 @@
+<!-- 
+<% layout("/layouts/boilerplate") %>
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NEWAGETRAVELLER</title>
+  </head> -->
+  <!-- <body> -->
+  
+  <% layout("/layouts/boilerplate") %>
+  <body>
+  <div class="row" style="width: 100%; margin: 20px auto;"> 
+    <div class="col-16 offset-1" >
+ 
+      <h3>Edit Abode Details</h3>
+      <br>
+
+      <!-- Example form with larger input fields -->
+<form method="POST" action="/listings/<%= listing._id %>?_method=PUT" 
+    novalidate class="needs-validation">
+
+<!-- Title Field -->
+<div class="form-group mb-3"> <!-- Adds bottom margin for spacing -->
+  <label for="title"><b>Title:</b></label> <!-- Bold label -->
+  <input name="listing[title]" 
+         id="title" 
+         type="text" 
+         value="<%= listing.title %>" 
+         class="form-control" 
+         style="width: 80%;" />
+</div>
+
+<!-- Description Field -->
+<div class="form-group mb-3"> <!-- Adds bottom margin -->
+  <label for="description"><b>Description:</b></label> <!-- Bold label -->
+  <textarea name="listing[description]" 
+            id="description" 
+            class="form-control" 
+            cols="50" 
+            rows="4" 
+            style="width: 80%;"> 
+    <%= listing.description %>
+  </textarea>
+</div>
+
+<!-- Image Field -->
+<div class="form-group mb-3"> <!-- Adds bottom margin -->
+  <label for="image"><b>Image URL:</b></label> <!-- Bold label -->
+  <input name="listing[image]" 
+         id="image" 
+         type="text" 
+         value="<%= listing.image %>" 
+         class="form-control" 
+         style="width: 80%;" />
+</div>
+
+<!-- Price Field -->
+<div class="form-group mb-3"> <!-- Adds bottom margin -->
+  <label for="price"><b>Price:</b></label> <!-- Bold label -->
+  <input name="listing[price]" 
+         id="price" 
+         type="number" 
+         value="<%= listing.price %>" 
+         class="form-control" 
+         style="width: 80%;" />
+</div>
+
+<!-- Country Field -->
+<div class="form-group mb-3"> <!-- Adds bottom margin -->
+  <label for="country"><b>Country:</b></label> <!-- Bold label -->
+  <input name="listing[country]" 
+         id="country" 
+         type="text" 
+         value="<%= listing.country %>" 
+         class="form-control" 
+         style="width: 80%;" />
+</div>
+
+<!-- Location Field -->
+<div class="form-group mb-3"> <!-- Adds bottom margin -->
+  <label for="location"><b>Location:</b></label> <!-- Bold label -->
+  <input name="listing[location]" 
+         id="location" 
+         type="text" 
+         value="<%= listing.location %>" 
+         class="form-control" 
+         style="width: 80%;" />
+</div>
+
+<!-- Submit Button -->
+<button class="btn btn-dark">Edit Details</button>
+</form>
+
+</div>
+</div>
+</body>
+    
+  <!-- 
+</div> -->
+
+  <!-- </body> -->
+
+
+<!-- </html>  -->

@@ -1,0 +1,81 @@
+<% layout("/layouts/boilerplate") %>        <%= success %> 
+  <body>
+    <br>
+    <h3>Enjoy Amazing Places - Explore Local Abodes  </h3>
+    <br> 
+    <!-- All Listings -->
+    <!-- <form method="GET" action="/listings/new">
+      <button>Create New Listing</button>
+    </form> -->
+
+
+    <div class="row   row-cols-lg-3 row-cols-md-2  row-cols-sm-1  "  >
+
+      <% for(let listing of allListings) { %>
+
+        <a href="/listings/<%= listing._id %>">
+          <div class="card col listing-card" >
+            <img src="<%= listing.image %>" class="card-img-top" alt="listing_image" style="height : 20rem" >
+            <div class="card-body">
+              <p class="card-text">
+                  <b><%= listing.title %> </b> 
+                  <!-- , Rs. <%= listing.price.toLocaleString("en-IN") %> / night -->
+                  <b> , <%= listing.location %> </b>
+                  <br>
+                  Rs. <%= listing.price.toLocaleString("en-IN") %> / night <br>
+                  
+              </p>
+            </div>
+          </div>
+        </a>
+      <% } %>
+  
+
+
+    </div>
+
+    
+
+    <!-- <ul>
+      <% for(let listing of allListings) { %>
+      <li><a href="/listings/<%= listing._id %>"> 
+        <%= listing.title %> </a></li>
+      <% } %>
+    </ul> -->
+
+
+  </body>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NEW AGE TRAVELLER</title>
+  </head>
+  <body>
+    <h3>All Listings</h3>
+    <form method="GET" action="/listings/new">
+      <button>Create New Listing</button>
+    </form>
+    <ul>
+      <% for(let listing of allListings) { %>
+      <li><a href="/listings/<%= listing._id %>"> <%= listing.title %> </a></li>
+      <% } %>
+    </ul>
+  </body>
+</html>
+
+ -->

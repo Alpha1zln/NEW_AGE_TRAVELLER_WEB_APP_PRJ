@@ -1,0 +1,108 @@
+body{
+    background-color : pink;
+
+}
+
+/* #h3_listing_index{
+    text-align: center !important;
+} */
+
+
+/* nav bar        14 apr 2024 */
+.navbar {
+    height : 16 rem !important;
+    background-color: white;
+    font-weight: 600 !important;
+    font-size : 110% ;
+    margin-right: 2rem;
+}
+
+
+.fa-solid {
+    color : #fe424d;
+    font-size : 2 rem;
+}
+
+.nav-link{
+    color : #222222 !important;
+}
+
+
+
+
+/* ********************** footer         14 apr 2024 ******************************** */  
+.f-info{
+    vertical-align: 1.5 rem;
+}
+
+.f-info-links a {
+    text-decoration:  none;
+    color: #222222;
+}
+
+.f-info-links a:hover {
+    text-decoration:  underline;
+    /* //color: #222222; */
+}
+
+.f-info-links{
+    width: 100%;
+
+}
+
+.f-info-socials, .f-info-links, .f-info-brand 
+{
+    width: 100%;
+    font-display: 1.5rem;
+    margin-left: 2 rem;
+    margin-right: 20 px !important;
+    justify-content: center;
+    align-items: centre;
+    font-size: 2 rem !important;
+    line-height:2 rem !important;
+    font-weight: 400 !important;
+    position: relative !important;
+}
+
+.f-info{
+    text-align: center;
+    display: flex;
+    background-color: rgb(242, 242, 242);
+    height : 8 rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+.f-info-brand a:not(:last-child) {
+    margin-right: 10px; /* Adjust the value as needed */
+}
+
+.f-info-brand {
+    margin-bottom: 10px; /* Adjust the value as needed */
+}
+
+
+/* cards */
+.listing-card{
+    border : none !important;
+    margin-bottom : 3 rem !important;
+}
+
+
+
+.card-img-top{
+    border-radius: 20 rem !important;
+    width : 100%;
+    object-fit: cover !important;
+}
+
+
+.card-body{
+    padding: 1 rem !important;
+}
+
+
+.card-text p {
+    font-weight: 400;
+}
